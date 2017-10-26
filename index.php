@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
       <div class="tab-content">
 
          <div id="login">   
-          <h1>E P R I N T - E R A </h1>
+          <h1>Shopkeeper </h1>
           
           <form action="index.php" method="post" autocomplete="off">
           
@@ -47,6 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
             </label>
             <input type="email" required autocomplete="off" name="email"/>
           </div>
+		  
+		  
           
           <div class="field-wrap">
             <label>
@@ -89,15 +91,46 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
               Email Address<span class="req">*</span>
             </label>
             <input type="email"required autocomplete="off" name='email' />
-          </div>
-          
+          </div>         
+		 
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
             </label>
             <input type="password"required autocomplete="off" name='password'/>
           </div>
-          
+		  
+		  <div class="field-wrap">
+            <label>
+              Contact Number<span class="req">*</span>
+            </label>
+            <input type="Contact"required autocomplete="off" name='Contact' />
+          </div>
+		  
+		  <div class="field-wrap">
+            <label>
+              Address<span class="req">*</span>
+            </label>
+            <textarea class="form-control" required="" rows="4"></textarea> 
+          </div>
+		  
+		   <div class="field-wrap">
+           
+              <select>   		   
+		   <option selected disabled>Number of Printers</option>
+		   <option value='1'>1</option>
+		   <option value='1'>2</option>
+		   <option value='1'>3</option>
+		   <option value='1'>4</option>
+		   <option value='1'>5</option>
+		   <option value='1'>6</option>
+		   
+		   </select>
+                 
+          </div>
+		  
+		  
+		   
           <button type="submit" class="button button-block" name="register" />Register</button>
           
           </form>
